@@ -34,7 +34,7 @@ A flat, square, text-first layout that makes the Herdr app look like the Herdr t
 
 ## Watch out
 
-- **Font:** Departure Mono is not bundled. Install it first (https://departuremono.com); otherwise terminals fall back to JetBrains Mono.
+- **Font:** Departure Mono (MIT, see `fonts/LICENSE-DepartureMono.txt`) is bundled in `fonts/`. Copy it to `~/.config/herdr-app/fonts/`; Herdr loads fonts from there at start. Without it, terminals fall back to JetBrains Mono.
 - **Rounded frames you can't remove:** Herdr draws its own frame (border, corner radius, shadow) around toasts, popups and dialogs, and macOS draws the window corners. `frame: "none"` only exists on `openOverlay`, not for the app's own toasts. See herdr-app issues #396 and #684.
 - Clones never receive fixes from the shipped mods. Re-clone to pick up updates.
 - Built and checked on herdr-app 0.1.13, macOS.
